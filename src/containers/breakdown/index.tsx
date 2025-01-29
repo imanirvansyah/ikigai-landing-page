@@ -1,8 +1,9 @@
 "use client"
+
 import { MissionSymbol, PassionSymbol, ProfessionSymbol, VocationSymbol } from "@/components/symbol"
 import { AnimatePresence, motion, useScroll, useTransform } from "motion/react"
 import { useEffect, useRef, useState } from "react"
-import styles from "./styles.module.css"
+import styles from "../styles.module.css"
 
 export const Breakdown = () => {
   const container = useRef<HTMLDivElement>(null);
@@ -101,10 +102,10 @@ export const Breakdown = () => {
             <MissionSymbol showLabel size={300} />
           </motion.div>
           <motion.div style={{ opacity: opacityC }} {...rotationAnimation}>
-            <ProfessionSymbol showLabel size={300} />
+            <VocationSymbol showLabel size={300} />
           </motion.div>
           <motion.div style={{ opacity: opacityD }} {...rotationAnimation}>
-            <VocationSymbol showLabel size={300} />
+            <ProfessionSymbol showLabel size={300} />
           </motion.div>
         </div>
       </div>
