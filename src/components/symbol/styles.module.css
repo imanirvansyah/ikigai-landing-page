@@ -1,0 +1,56 @@
+.sphere {
+  /* background-color: var(--background); */
+  border: 1px solid var(--foreground);
+  border-radius: 50%;
+  text-align: center;
+  /* padding: 10px; */
+}
+.sphere span {
+  font-weight: 200;
+  font-size: 8px;
+}
+.mission {
+  rotate: -90deg;
+}
+.profession {
+  rotate: 90deg;
+}
+.vocation {
+  rotate: 180deg;
+}
+
+.ikigai {
+  position: relative;
+
+}
+.ikigai .sphere {
+  position: absolute;
+}
+
+.ikigai .sphere:nth-child(1) {
+  top: -35%;
+  
+}
+.ikigai .sphere:nth-child(2) {
+  left: -35%;
+}
+.ikigai .sphere:nth-child(3) {
+  right: -35%;
+}
+.ikigai .sphere:nth-child(4) {
+  bottom: -35%;
+}
+
+@media (min-width: 900px) {
+  .sphere {
+    padding: 10px
+  }
+  .sphere span {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1700px) {
+  .sphere span {
+    font-size: 16px;
+  }
+}
