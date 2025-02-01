@@ -25,6 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon.png" sizes="any"></link>
       <body className={`${notoSans.variable} ${notoSansJp.variable}`}>
         <LenisProvider>
           {children}
